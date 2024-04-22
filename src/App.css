@@ -1,0 +1,156 @@
+/* Fonts */
+@font-face {
+  font-family: 'Something Strange';
+  src: url('./assets/fonts/something_strange/Something Strange.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Gilroy Regular';
+  src: url('./assets/fonts/gilroy/Gilroy-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Gilroy Medium';
+  src: url('./assets/fonts/gilroy/Gilroy-Medium.ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Gilroy Bold';
+  src: url('./assets/fonts/gilroy/Gilroy-Bold.ttf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Gilroy ExtraBold';
+  src: url('./assets/fonts/gilroy/Gilroy-ExtraBold.ttf');
+  font-weight: 900;
+}
+
+/* Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url('./assets/body-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #272B2C;
+}
+
+.container {
+  max-width: calc(1200px + 32px);
+  width: 100%;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  padding: 16px 40px;
+  box-sizing: border-box;
+  border: 2px solid rgb(114, 237, 47);
+  border-radius: 4px;
+  background-color: transparent;
+  color: #fff;
+  font-family: 'Gilroy Medium';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 46px 64px;
+}
+
+.navbar {}
+
+.nav__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 471px;
+}
+
+.nav__item {}
+
+.nav__link {
+  font-family: 'Gilroy Regular';
+  font-weight: 400;
+  font-size: 18px;
+  margin-right: 48px;
+  color: #fff;
+}
+
+/* Hero section */
+/* .hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+} */
+
+.hero__body {
+  width: 773px;
+  margin-top: 62px;
+  margin-left: 64px;
+}
+
+.section__title {
+  color: #5FE117;
+  font-family: 'Something Strange';
+  font-size: 124px;
+  font-weight: 400;
+  line-height: 143px;
+  letter-spacing: 5%;
+}
+
+.section__description {
+  color: #fff;
+  font-family: 'Gilroy Regular';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-top: 40px;
+}
+
+.section__button {
+  margin-top: 117px;
+  background-color: #72ED2F;
+  color: #000;
+  font-family: 'Gilroy Medium';
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.hero__image {
+  position: relative;
+}
+
+.hero__image img {
+  position: absolute;
+  top: -700px;
+  left: 50%;
+}
